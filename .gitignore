@@ -1,1 +1,16 @@
-bundle
+# OS files
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Don't track the actual plugin files in git - setup script will clone them
+vim/plugged/*
+!vim/plugged/.gitkeep
+tmux/plugins/*
+!tmux/plugins/.gitkeep
+tmux/catppuccino/
+tmux/dracula/
+
+# Oh-my-zsh (installed by setup script)
+.oh-my-zsh/
